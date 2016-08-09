@@ -1,0 +1,125 @@
+<!-- //Author:Eduardo Santiago -->
+<a class='btn btn-success' href="#/phones" > Back: Phone List</a>
+<hr>
+<form ng-submit="submit()" ng-controller="ExampleController">
+ <div class="row">
+    <div class="col-sm-6">
+		<img ng-src="{{mainImageUrl}}" class="phone">
+	</div>
+	<div class="col-sm-6">
+		<ul class="phone-thumbs">
+		  <li ng-repeat="img in phone.images">
+			<img ng-src="{{img}}" ng-click="setImage(img)">
+		  </li>
+		</ul>
+	</div>
+</div>
+<br>
+<p>Name<input type=text ng-model="name" class="form-control" ></p>
+<p><input type=hidden ng-model="id" class="form-control" ></p>
+<p>Decription<input type=text ng-model="description" class="form-control" ></p>
+
+<ul class="specs">
+  <li>
+    <span>Availability and Networks</span>
+    <dl>
+      <dt>Availability</dt>
+      <dd><input type=text ng-model="availability" class="form-control" ></dd>
+    </dl>
+  </li>
+  <li>
+    <span>Battery</span>
+    <dl>
+      <dt>Type</dt>
+      <dd><input type=text ng-model="battery_type" class="form-control"></dd>
+      <dt>Talk Time</dt>
+      <dd><input type=text ng-model="battery_talkTime" class="form-control"></dd>
+      <dt>Standby time (max)</dt>
+      <dd><input type=text ng-model="battery_standbyTime" class="form-control"></dd>
+    </dl>
+  </li>
+  <li>
+    <span>Storage and Memory</span>
+    <dl>
+      <dt>RAM</dt>
+      <dd><input type=text ng-model="storage_ram" class="form-control"></dd>
+      <dt>Internal Storage</dt>
+      <dd><input type=text ng-model="storage_flash" class="form-control"></dd>
+    </dl>
+  </li>
+  <li>
+    <span>Connectivity</span>
+    <dl>
+      <dt>Network Support</dt>
+      <dd><input type=text ng-model="connectivity_cell" class="form-control"></dd>
+      <dt>WiFi</dt>
+      <dd><input type=text ng-model="connectivity_wifi" class="form-control"></dd>
+      <dt>Bluetooth</dt>
+      <dd><input type=text ng-model="connectivity_bluetooth" class="form-control"></dd>
+      <dt>Infrared</dt>
+      <dd><input type=text ng-model="connectivity_infrared" class="form-control"></dd>
+      <dt>GPS</dt>
+      <dd><input type=text ng-model="connectivity_gps" class="form-control"></dd>
+    </dl>
+  </li>
+  <li>
+    <span>Android</span>
+    <dl>
+      <dt>OS Version</dt>
+      <dd><input type=text ng-model="android_os" class="form-control"></dd>
+      <dt>UI</dt>
+      <dd><input type=text ng-model="android_ui" class="form-control"></dd>
+    </dl>
+  </li>
+  <li>
+    <span>Size and Weight</span>
+    <dl>
+      <dt>Dimensions</dt>
+      <dd><input type=text ng-model="dimensions" class="form-control"></dd>
+      <dt>Weight</dt>
+      <dd><input type=text ng-model="weight" class="form-control"></dd>
+    </dl>
+  </li>
+  <li>
+    <span>Display</span>
+    <dl>
+      <dt>Screen size</dt>
+      <dd><input type=text ng-model="screenSize" class="form-control"></dd>
+      <dt>Screen resolution</dt>
+      <dd><input type=text ng-model="screenResolution" class="form-control"></dd>
+      <dt>Touch screen</dt>
+      <dd><input type=text ng-model="touchScreen" class="form-control"></dd>
+    </dl>
+  </li>
+  <li>
+    <span>Hardware</span>
+    <dl>
+      <dt>CPU</dt>
+      <dd><input type=text ng-model="hardware_cpu" class="form-control"></dd>
+      <dt>USB</dt>
+      <dd><input type=text ng-model="hardware_usb" class="form-control"></dd>
+      <dt>Audio / headphone jack</dt>
+      <dd><input type=text ng-model="hardware_audioJack" class="form-control"></dd>
+      <dt>FM Radio</dt>
+      <dd><input type=text ng-model="hardware_fmRadio" class="form-control"></dd>
+      <dt>Accelerometer</dt>
+      <dd><input type=text ng-model="hardware_accelerometer" class="form-control"></dd>
+    </dl>
+  </li>
+  <li>
+    <span>Camera</span>
+    <dl>
+      <dt>Primary</dt>
+      <dd><input type=text ng-model="camera_primary" class="form-control"></dd>
+      <dt>Features</dt>
+      <dd><input type=text ng-model="camera_features" class="form-control"></dd>
+    </dl>
+  </li>
+  <li>
+    <span>Additional Features</span>
+    <dd><input type=text ng-model="additionalFeatures" class="form-control"></dd>
+  </li>
+</ul>
+<input class='btn btn-success' type="submit" id="submit" value="Submit" />
+<!--<a class='btn btn-success' id="submit">Update Changes</a>-->
+</form>
