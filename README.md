@@ -1,8 +1,13 @@
 ##Full Stack Node,Angular JS, Express,Mysql
-##Overview :
-	This App uses Node JS, Angular JS, Express , MySQL. With the intention to demonstrate how Angular JS, Express, MySQL Node interacts with the database server to update and retrieve data.
-	Server-side communication relies on Nodes Mysql Package to make a database communication and Express to route form request.
+##Overview
+This App uses Node JS, Angular JS, Express , MySQL. 
+With the intention to demonstrate how Angular JS, Express, MySQL Node 
+interacts with the database server to update and retrieve data.
+
+Server-side communication relies on Nodes Mysql Package 
+to make a database communication and Express to route form request.
 	
+Node Express and MySQL were used to create an app that will bridge the communication between client and server side. 
 
 ## MIT S011: DELIVERABLES ACCOMPLISHED
  * Essential elements of web page development:
