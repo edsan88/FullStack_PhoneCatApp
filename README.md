@@ -6,6 +6,7 @@ interacts with the database server to update and retrieve data.
 
 Server-side communication relies on Nodes Mysql Package 
 to make a database communication and Express to route form request.
+
 	
 Node Express and MySQL were used to create an app that will bridge the communication between client and server side. 
 
@@ -32,6 +33,8 @@ Node Express and MySQL were used to create an app that will bridge the communica
 * In your terminal, clone the files : https://github.com/edsan88/FullStack_PhoneCatApp.git (assuming git is installed)
 * Export phone.sql to mysql database.
 	* start your mysql database
+	* Open file: server.js 
+		* Change field values accordingly : host , user , password
 * Open terminal, cd to_your_cloned_directory 
 	* npm start or node server.js (assuming node.js is installed)
 * Launch your browser and point to http://localhost:8000
